@@ -1,0 +1,1 @@
+../../slidev_template/uno.config.ts

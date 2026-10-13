@@ -1,0 +1,12 @@
+{
+  "name": "04-concept-of-operations-market-research",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build",
+    "export": "slidev export"
+  },
+  "dependencies": { "@slidev/cli": "^52.0.0", "@slidev/theme-default": "^0.25.0", "micromark": "^4.0.2" },
+  "devDependencies": { "@iconify-json/carbon": "^1.2.8", "@iconify-json/logos": "^1.2.4", "@iconify/utils": "^3.0.0", "playwright-chromium": "^1.45.0", "seedrandom": "^3.0.5", "unocss": "^66.0.0" }
+}

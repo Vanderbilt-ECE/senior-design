@@ -1,0 +1,1 @@
+../../slidev_template/vite.config.ts

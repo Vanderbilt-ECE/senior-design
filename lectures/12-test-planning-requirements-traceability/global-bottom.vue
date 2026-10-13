@@ -1,0 +1,1 @@
+../../slidev_template/global-bottom.vue

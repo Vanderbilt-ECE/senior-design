@@ -1,0 +1,99 @@
+:root {
+  --slidev-code-padding: 8px 10px;
+  --slidev-code-background: #16161690 !important;
+}
+
+.git-box {
+  border: 2px solid rgb(30 64 175 / 65%);
+  background: rgb(30 58 138 / 20%);
+  border-radius: 0.6rem;
+  padding: 0.8rem 1rem;
+  backdrop-filter: blur(8px);
+}
+.git-box-teal {
+  border-color: rgb(17 94 89 / 90%);
+  background: rgb(17 94 89 / 20%);
+}
+.git-box-amber {
+  border-color: rgb(146 64 14 / 80%);
+  background: rgb(146 64 14 / 20%);
+}
+.git-box p { margin-top: 0.6rem; margin-bottom: 0; }
+
+/* Force a true-black backdrop so the glow effect reads cleanly */
+.dark #slide-content {
+  background-color: black !important;
+}
+
+h6 {
+  text-transform: initial !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+
+/* Glassy code blocks */
+.slidev-code {
+  backdrop-filter: blur(10px);
+  border: 1px solid #eee1;
+}
+
+/* Click transitions */
+.slidev-vclick-target {
+  transition:
+    opacity 500ms ease,
+    filter 200ms ease,
+    color 300ms ease;
+}
+
+.slidev-vclick-hidden {
+  opacity: 0;
+  pointer-events: none;
+  filter: blur(3px);
+}
+
+/* Slide-to-slide fade */
+.fade-out-leave-active {
+  transition:
+    opacity calc(var(--slidev-transition-duration) * 0.6) ease-out,
+    filter 200ms ease;
+}
+
+.fade-out-enter-active {
+  transition:
+    opacity calc(var(--slidev-transition-duration) * 0.8) ease-in,
+    filter 200ms ease;
+  transition-delay: calc(var(--slidev-transition-duration) * 0.6);
+}
+
+.fade-out-enter-from,
+.fade-out-leave-to {
+  opacity: 0;
+  filter: blur(5px);
+}
+
+.slidev-code .line {
+  transition: opacity 200ms ease;
+}
+
+/* Lecture typography: generous body copy with compact, legible chart labels. */
+.slidev-layout { font-family: 'DM Sans', sans-serif; font-size: 22px; line-height: 1.4; }
+.slidev-layout h1 { font-size: 36px; line-height: 1.15; margin-bottom: 22px; font-weight: 700; }
+.slidev-layout h2 { font-size: 25px; line-height: 1.2; margin-bottom: 12px; }
+.slidev-layout p { margin: 10px 0; }
+.slidev-layout li { margin: 10px 0; }
+.kicker { font-size: 17px; letter-spacing: .12em; text-transform: uppercase; color: #67e8f9; margin-bottom: 20px; }
+.lead { font-size: 24px; color: #cbd5e1; margin-bottom: 22px; }
+.small { font-size: 18px; line-height: 1.4; color: #cbd5e1; }
+.card { border: 2px solid #ffffff0d; background: #ffffff0d; backdrop-filter: blur(8px); border-radius: 10px; padding: 20px; }
+.card.teal { border-color: #115e59; background: #115e5933; }
+.card.amber { border-color: #92400e; background: #92400e33; }
+.card.red { border-color: #991b1b; background: #991b1b33; }
+.banner { padding: 14px 20px; border-left: 4px solid #2dd4bf; background: #ffffff0a; margin-top: 24px; }
+.diagram { font-family: 'DM Sans', sans-serif; }
+.deck-table { width: 100%; border-collapse: collapse; font-size: 20px; }
+.deck-table th { color: #5eead4; text-align: left; font-weight: 600; }
+.deck-table th, .deck-table td { padding: 12px 14px; border-bottom: 1px solid #ffffff22; }
+.deck-table.compact { font-size: 18px; }
+.deck-table.compact th, .deck-table.compact td { padding: 12px 8px; }
+.cover h1 { font-size: 54px; line-height: 1.08; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; } }

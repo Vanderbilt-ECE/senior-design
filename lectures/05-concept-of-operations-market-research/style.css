@@ -1,0 +1,96 @@
+:root {
+  --slidev-code-padding: 8px 10px;
+  --slidev-code-background: #16161690 !important;
+}
+
+.slidev-layout { font-family: 'DM Sans', sans-serif; }
+.slidev-layout h1 { font-size: 2.35rem; line-height: 1.15; letter-spacing: -.025em; }
+.slidev-layout h2 { font-size: 1.7rem; line-height: 1.25; }
+.slidev-layout h3 { font-size: 1.3rem; line-height: 1.25; font-weight: 650; margin: 0 0 .65rem; }
+.card { border: 2px solid; border-radius: .6rem; padding: 1.1rem 1.2rem; font-size: 1.15rem; line-height: 1.4; }
+.card p { margin: .6rem 0 0; }
+.neutral, .banner { border-color: #ffffff0d; background: #ffffff0d; backdrop-filter: blur(8px); }
+.teal { border-color: #115e59; background: #115e5933; }
+.blue { border-color: #1e40af; background: #1e40af33; }
+.amber { border-color: #92400e; background: #92400e33; }
+.red { border-color: #991b1b; background: #991b1b33; }
+.violet { border-color: #5b21b6; background: #5b21b633; }
+.banner { padding: .9rem 1.2rem; border-width: 2px; border-style: solid; border-radius: .6rem; font-size: 1.1rem; }
+.eyebrow { color: #94a3b8; font-size: .8rem; letter-spacing: .12em; margin-bottom: .8rem; }
+.source { color: #94a3b8; font-size: .7rem; margin-top: .5rem; }
+.matrix { width: 100%; font-size: .95rem; }
+.matrix th { color: #5eead4; font-weight: 600; background: #115e5926; }
+.matrix td, .matrix th { padding: .65rem .7rem; border-bottom: 1px solid #ffffff20; }
+.matrix small { color: #94a3b8; }
+
+.git-box {
+  border: 2px solid rgb(30 64 175 / 65%);
+  background: rgb(30 58 138 / 20%);
+  border-radius: 0.6rem;
+  padding: 0.8rem 1rem;
+  backdrop-filter: blur(8px);
+}
+.git-box-teal {
+  border-color: rgb(17 94 89 / 90%);
+  background: rgb(17 94 89 / 20%);
+}
+.git-box-amber {
+  border-color: rgb(146 64 14 / 80%);
+  background: rgb(146 64 14 / 20%);
+}
+.git-box p { margin-top: 0.6rem; margin-bottom: 0; }
+
+/* Force a true-black backdrop so the glow effect reads cleanly */
+.dark #slide-content {
+  background-color: black !important;
+}
+
+h6 {
+  text-transform: initial !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+
+/* Glassy code blocks */
+.slidev-code {
+  backdrop-filter: blur(10px);
+  border: 1px solid #eee1;
+}
+
+/* Click transitions */
+.slidev-vclick-target {
+  transition:
+    opacity 500ms ease,
+    filter 200ms ease,
+    color 300ms ease;
+}
+
+.slidev-vclick-hidden {
+  opacity: 0;
+  pointer-events: none;
+  filter: blur(3px);
+}
+
+/* Slide-to-slide fade */
+.fade-out-leave-active {
+  transition:
+    opacity calc(var(--slidev-transition-duration) * 0.6) ease-out,
+    filter 200ms ease;
+}
+
+.fade-out-enter-active {
+  transition:
+    opacity calc(var(--slidev-transition-duration) * 0.8) ease-in,
+    filter 200ms ease;
+  transition-delay: calc(var(--slidev-transition-duration) * 0.6);
+}
+
+.fade-out-enter-from,
+.fade-out-leave-to {
+  opacity: 0;
+  filter: blur(5px);
+}
+
+.slidev-code .line {
+  transition: opacity 200ms ease;
+}
